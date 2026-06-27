@@ -53,19 +53,6 @@
 										<div class="slider__item--sub"><?= $s['sub'] ?></div>
 										<div class="slider__item--txt"><?= $s['txt'] ?></div>
 									</div>
-
-
-									<div class="slider__item--meta">
-										<div class="slider__item--ttl"><?= $s['ttl'] ?></div>
-										<div class="slider__item--sub"><?= $s['sub'] ?></div>
-										<div class="slider__item--txt"><?= $s['txt'] ?></div>
-									</div>
-
-									<div class="slider__item--meta">
-										<div class="slider__item--ttl"><?= $s['ttl'] ?></div>
-										<div class="slider__item--sub"><?= $s['sub'] ?></div>
-										<div class="slider__item--txt"><?= $s['txt'] ?></div>
-									</div>
 								</div>
 								<?php endif; ?>
 							<?php endforeach ?>

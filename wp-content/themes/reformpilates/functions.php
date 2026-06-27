@@ -146,3 +146,13 @@
 	add_filter('acf/settings/capability', function($cap) {
 		return 'edit_posts';
 	});
+
+	/* Register Navigation Menus */
+	function reform_register_menus() {
+		register_nav_menus(
+			array(
+				'header_menu' => __( 'Menú del Header' )
+			)
+		);
+	}
+	add_action( 'init', 'reform_register_menus' );

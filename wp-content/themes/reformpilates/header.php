@@ -126,11 +126,25 @@
 				<img class="header__logo--icon" src="<?php bloginfo('template_url') ?>/img/logo-icon.svg">
 			</a>
 			<nav class="header__menu menu_JS">
-				<a class="header__menu--item menu_item_JS" href="<?php bloginfo('url') ?>/#reformer">Reformer</a>
-				<a class="header__menu--item menu_item_JS" href="<?php bloginfo('url') ?>/#mat">Mat</a>
-				<a class="header__menu--item menu_item_JS" href="<?php bloginfo('url') ?>/#yoga">Yoga</a>
-				<a class="header__menu--item menu_item_JS" href="<?php bloginfo('url') ?>/#team"><?php pll_e('Nuestro Equipo') ?></a>
-				<a class="header__menu--item menu_item_JS" href="<?php bloginfo('url') ?>/<?php pll_e('nosotros') ?>"><?php pll_e('Sobre Reform') ?></a>
+				<?php 
+					if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ 'header_menu' ] ) && $locations[ 'header_menu' ] != 0 ) {
+						$menu = wp_get_nav_menu_object( $locations[ 'header_menu' ] );
+						$menu_items = wp_get_nav_menu_items($menu->term_id);
+						if ($menu_items) {
+							foreach ( (array) $menu_items as $key => $menu_item ) {
+								$title = $menu_item->title;
+								$url = $menu_item->url;
+								echo '<a class="header__menu--item menu_item_JS" href="' . esc_url($url) . '">' . esc_html($title) . '</a>';
+							}
+						}
+					} else {
+				?>
+						<a class="header__menu--item menu_item_JS" href="<?php bloginfo('url') ?>/#reformer">Reformer</a>
+						<a class="header__menu--item menu_item_JS" href="<?php bloginfo('url') ?>/#mat">Mat</a>
+						<a class="header__menu--item menu_item_JS" href="<?php bloginfo('url') ?>/#yoga">Yoga</a>
+						<a class="header__menu--item menu_item_JS" href="<?php bloginfo('url') ?>/#team"><?php pll_e('Nuestro Equipo') ?></a>
+						<a class="header__menu--item menu_item_JS" href="<?php bloginfo('url') ?>/<?php pll_e('nosotros') ?>"><?php pll_e('Sobre Reform') ?></a>
+				<?php } ?>
 			</nav>
 			<div class="header__lang">
 				<?php pll_the_languages(array(
