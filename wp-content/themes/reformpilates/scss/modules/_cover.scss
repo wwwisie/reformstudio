@@ -1,0 +1,70 @@
+.cover {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	padding: 0 30px 170px 30px;
+	position: relative;
+	margin-bottom: -100px;
+	@include bg-cover;
+	@include under($b-lg) {
+		margin-bottom: -80px;
+	}
+	@include under($b-sm) {
+		display: none;
+		margin-bottom: -70px;
+	}
+
+	#canvas {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+	}
+
+	.plane {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		position: absolute;
+		img { display: none; }
+	}
+
+	&--img {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		opacity: 0;
+		position: absolute;
+		object-fit: cover;
+		@include transition(0.15s);
+
+		&.active {
+			opacity: 1;
+		}
+	}
+
+	&--wrap {
+		z-index: 3;
+		position: relative;
+		margin-top: auto;
+	}
+
+	&--txt {
+		font-size: 67px;
+		font-family: $f-bold;
+
+		p {
+			line-height: 1.2;
+			letter-spacing: -0.03em;
+		}
+
+		a {
+			color: $c-aqua;
+		}
+	}
+}

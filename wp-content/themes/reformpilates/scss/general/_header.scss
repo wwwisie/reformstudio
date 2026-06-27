@@ -1,0 +1,149 @@
+.header {
+	top: 0;
+	width: 100%;
+	height: 100px;
+	position: sticky;
+	z-index: 99;
+	@include middle;
+	@include transition;
+	@include under($b-lg) {
+		height: 80px;
+	}
+	@include under($b-sm) {
+		height: 70px;
+		border-bottom: 1px solid $c-black;
+		background-color: $c-white;
+	}
+
+	&.active {
+		border-bottom: 1px solid $c-black;
+		background-color: $c-white;
+	}
+
+	&--wrap {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	&__logo {
+		margin-right: auto;
+
+		&--img {
+			display: block;
+			padding-top: 5px;
+			@include under($b-sm) {
+				display: none;
+			}
+		}
+
+		&--icon {
+			display: block;
+			@include over($b-sm) {
+				display: none;
+			}
+		}
+	}
+
+	&__menu {
+		margin: auto 0;
+		@include no-select;
+		@include under($b-lg) {
+			top: 80px;
+			left: 0;
+			width: 100%;
+			display: none;
+			padding: 20px 30px;
+			position: absolute;
+			border-bottom: 1px solid $c-black;
+			background-color: $c-white;
+		}
+		@include under($b-sm) {
+			top: 70px;
+			padding: 20px 17px;
+		}
+
+		&--item {
+			font-size: 14.5px;
+			margin-right: 38px;
+			font-family: $f-bold;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			@include under($b-sm) {
+				width: 100%;
+				display: block;
+				font-size: 17px;
+				line-height: 2.2;
+			}
+		}
+
+		&--btn {
+			@extend %btn;
+			&:hover {
+				background-color: $c-white !important;
+			}
+
+			span {
+				@include under($b-xxs)  { display: none; }
+			}
+		}
+	}
+
+	&__lang {
+		margin: auto 40px auto 0;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		@include under($b-sm) { margin-right: 30px; }
+		@include under($b-xxs) { margin-right: 25px; }
+
+		li.lang-item {
+			display: inline-block;
+
+			&.current-lang { display: none; }
+
+			a {
+				display: inline-block;
+				font-size: 14.5px;
+				font-family: $f-bold;
+				line-height: 21px;
+				padding-left: 28px;
+				text-transform: uppercase;
+				background-size: 20px 21px;
+				background-image: url(../img/icon-lang.svg);
+				background-position: left center;
+				background-repeat: no-repeat;
+
+			}
+		}
+	}
+
+	&--btn {
+		width: 35px;
+		height: 35px;
+		margin: auto 0;
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		margin-left: 20px;
+		vertical-align: middle;
+		@include over($b-lg) { display: none; }
+
+		&.active:after { transform: translate(-50%,0) rotate(45deg); }
+		&.active:before { transform: translate(-50%,0) rotate(-45deg); }
+
+		&:after,
+		&:before {
+			content: '';
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: 2px;
+			display: block;
+			position: absolute;
+			background-color: $c-black;
+			@include transition;
+		}
+		&:after { transform: translate(-50%,-6px); }
+		&:before { transform: translate(-50%,6px); }
+	}
+}

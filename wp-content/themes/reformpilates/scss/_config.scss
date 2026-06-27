@@ -1,0 +1,60 @@
+
+/* CONFIG */
+
+@import '_mixins';
+@import '_variables';
+
+* { margin: 0; padding: 0; box-sizing: border-box; outline: none; }
+
+html { width: 100%; scroll-behavior: smooth; }
+
+body { 
+	width: 100%;
+	color: $c-font;
+	position: relative;
+	font-size: 18px;
+	min-height: 100vh;
+	background: $c-base;
+	line-height: 1.5;
+	font-family: $f-book;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.screen-reader-text { position: absolute; left: -9999px; top: -9999px; }
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .group, *:first-child+html .group { zoom: 1; }
+
+h1,h2,h3,h4,h5,h6 { font-family: $f-bold; font-weight: normal; margin: 0 0 15px 0; line-height: 1; }
+
+p {
+	margin: 0 0 15px 0;
+	line-height: 1.5;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+a { 
+	color: $c-font; 
+	text-decoration: none;
+}
+
+img {
+	border: none;
+	@include no-select;
+}
+a img { border: none; }
+b,strong { font-weight: normal; font-family: $f-bold; }
+
+#pre { 
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: block;
+	z-index: 99;
+	position: fixed;
+	background: $c-base;
+}
+

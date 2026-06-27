@@ -1,0 +1,128 @@
+.slider {
+	width: 100%;
+
+	&.beige { background-color: $c-off; }
+	&.beige &__item { background-color: $c-white; }
+
+	&.mint { background-color: $c-light; }
+	&.mint &__item { background-color: $c-white; }
+
+	&--wrap {}
+
+	&__content {
+		padding: 40px 0;
+
+		&--ttl {
+			width: 100%; max-width: 916px;
+			margin: 0 auto;
+			font-size: 46px;
+			line-height: 1;
+			font-family: $f-semi;
+			margin-bottom: 60px;
+			@include under($b-sm) {
+				font-size: 32px;
+				margin-bottom: 50px;
+			}
+			@include under($b-xs) {
+				font-size: 27px;
+				margin-bottom: 40px;
+			}
+		}
+
+		&--slider {
+			width: 100%;
+			position: relative;
+			padding-bottom: 60px;
+
+			.slick-arrow {
+				bottom: 0;
+				width: 50px;
+				height: 15px;
+				border: 0;
+				cursor: pointer;
+				position: absolute;
+				font-size: 0;
+				transform-origin: center center;
+				background-color: transparent;
+				background-image: url(../img/arrow-right.svg);
+				@include no-webkit;
+
+				&.slick-next {
+					right: 50px;
+				}
+				&.slick-prev {
+					left: 50px;
+					transform: rotate(180deg);
+				}
+			}
+		}
+	}
+
+	&__item {
+		width: 400px;
+		border: 1px solid $c-black;
+		overflow: hidden;
+		margin-right: 20px;
+		border-radius: 10px;
+		background-color: $c-off;
+		@include under($b-sm) {
+			width: 380px;
+			margin-right: 15px;
+		}
+		@include under($b-xs) {
+			width: 320px;
+			margin-right: 15px;
+		}
+
+		&--img {
+			width: 100%;
+			background-size: cover;
+			background-position: top center;
+
+			span {
+				width: 100%;
+				padding-top: 56%;
+				display: block;
+			}
+		}
+
+		&--meta {
+			padding: 24px;
+			@include under($b-sm) {
+				padding: 24px 20px;
+			}
+			@include under($b-xs) {
+				padding: 20px 17px;
+			}
+		}
+
+		&--ttl {
+			font-size: 22px;
+			line-height: 1.2;
+			font-family: $f-bold;
+			margin-bottom: 15px;
+			@include under($b-xs) {
+				font-size: 18px;
+			}
+		}
+
+		&--sub {
+			font-size: 15px;
+			font-family: $f-mono;
+			margin-bottom: 30px;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			@include under($b-xs) {
+				font-size: 14px;
+			}
+			margin-bottom: 20px;
+		}
+
+		&--txt {
+			font-size: 17px;
+			@include under($b-xs) {
+				font-size: 16px;
+			}
+		}
+	}
+}

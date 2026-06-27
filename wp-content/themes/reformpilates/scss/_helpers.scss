@@ -1,0 +1,64 @@
+
+.wrap {
+	width: 100%; max-width: $w-wrap;
+	margin: 0 auto;
+	padding: 0 30px;
+	@include under($b-sm) {
+		padding: 0 17px;
+	}
+}
+
+%btn {
+	color: $c-black;
+	border: 2px solid;
+	padding: 20px 40px;
+	display: inline-block;
+	font-size: 14.5px;
+	line-height: 1;
+	font-family: $f-bold;
+	white-space: nowrap;
+	border-radius: 30px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	background-color: $c-aqua;
+	@include no-select;
+	@include transition;
+	@include under($b-lg) {
+		padding: 16px 24px;
+	}
+	@include under($b-sm) {
+		padding: 13px 20px;
+		font-size: 13px;
+	}
+	@include under($b-xs) {
+		padding: 12px 20px;
+	}
+
+	&:hover {
+		background-color: $c-aqua !important;
+	}
+}
+
+%txt {
+	font-size: 21px;
+	font-family: $f-bold;
+	@include under($b-sm) {
+		font-size: 17px;
+		font-family: $f-book;
+	}
+
+	strong {
+		color: $c-aqua;
+		font-size: 46px;
+		font-family: $f-semi;
+		@include under($b-sm) {
+			font-size: 30px;
+		}
+	}
+}
+
+[data-parallax] {
+	@include under($b-xs) {
+		transform: none !important;
+	}
+}

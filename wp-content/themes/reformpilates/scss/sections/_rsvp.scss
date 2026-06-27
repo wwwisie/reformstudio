@@ -1,0 +1,375 @@
+.rsvp {
+	padding: 40px 0 0 0;
+
+	img {
+		width: 100%;
+		margin: 40px 0 20px 0;
+		display: block;
+	}
+
+	&--widget {
+		width: 100%; max-width: 1130px;
+		margin: 0 auto;
+
+		.loading {
+			width: 30px !important;
+			height: auto !important;
+			margin: 30px auto;
+		}
+
+		.bw-widget {
+			display: flex;
+			flex-wrap: wrap;
+
+			* { font-weight: normal !important; }
+
+			.bw-widget__header {
+				order: 1;
+				width: 100%;
+				padding: 0 !important;
+				font-family: $f-bold;
+				margin-bottom: 30px;
+				background-color: transparent !important;
+
+				.bw-header__title {
+					display: none;
+					font-size: 20px;
+					font-family: $f-bold !important;
+				}
+
+				.bw-header__account-link {
+					@extend %btn;
+					padding: 12px 20px;
+					margin-left: auto;
+					font-family: $f-bold !important;
+					background-color: $c-off;
+				}
+			}
+
+			.bw-filters {
+				order: 3;
+				display: flex !important;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				background-color: transparent !important;
+
+				&:not(.bw-filters--is-open) {
+					display: flex !important;
+				}
+				&.bw-filters--is-open {
+					display: none !important;
+					@include over($b-md) {
+						display: flex !important;
+					}
+
+				}
+
+				.bw-filters__checkboxes {
+					padding: 0;
+					margin-right: 40px;
+					@include under($b-md) {
+						width: 100%;
+						margin-top: 20px;
+					}
+
+					.bw-checkbox {
+						cursor: pointer;
+						margin: 0 20px 0 0;
+
+						.bw-i-check {
+							margin-right: 4px !important;
+						}
+
+						.bw-checkbox__label {
+							font-size: 12.5px !important;
+							font-family: $f-bold !important;
+							text-transform: uppercase;
+						}
+					}
+				}
+
+				.bw-filters-flex-container {
+					display: flex;
+					align-items: flex-start;
+					@include under($b-md) {
+						width: 100%;
+						margin-top: 20px;
+					}
+
+					.bw-filters__selects {
+						display: flex;
+						border-top: 0;
+						margin-top: 0;
+
+						.bw-select {
+							width: auto;
+							height: 30px;
+							border: 1px solid $c-black;
+							cursor: pointer;
+							padding: 0 20px 0 10px;
+							font-size: 12.5px !important;
+							margin-right: 15px;
+							border-radius: 20px;
+							font-family: $f-bold !important;
+							text-transform: uppercase;
+
+							option {
+								text-transform: none;
+							}
+						}
+					}
+
+					.bw-filters__controls {
+						padding: 0;
+						margin-left: 25px;
+
+						.bw-filters__reset {
+							line-height: 26px;
+							font-family: $f-bold !important;
+							text-transform: uppercase;
+						}
+					}
+				}
+			}
+
+			.bw-calendar-container {
+				order: 2;
+				border-top: 0;
+				margin-right: auto;
+				@include under($b-md) {
+					width: 100%;
+				}
+
+				.bw-fullcal__field {
+					margin: 0;
+
+					.bw-datepicker {
+						width: auto;
+						cursor: pointer;
+						border: 1px solid $c-black;
+						border-radius: 20px;
+						@include no-select;
+
+						&__button {
+							width: 36px;
+							padding-left: 5px;
+							text-align: center;
+						}
+
+						&__input {
+							width: 120px;
+							cursor: pointer;
+							text-align: center;
+							border-left: 1px solid $c-black;
+							font-family: $f-book !important;
+						}
+					}
+
+					.bw-header__filter-link {
+						cursor: pointer;
+						margin-left: auto;
+						@include over($b-md) {
+							display: none;
+						}
+					}
+				}
+
+				.bw-fullcal-button {
+					color: $c-aqua;
+					padding: 10px 20px;
+					border-radius: 30px;
+				}
+
+				.bw-calendar {
+
+					.bw-calendar__heading {
+						color: $c-aqua;
+						padding: 15px 0 !important;
+						font-size: 15px;
+						font-family: $f-bold !important;
+					}
+
+					.bw-calendar__day {
+						padding: 15px 0;
+
+						span {
+							width: 35px !important;
+							height: 35px !important;
+							font-size: 15px;
+							font-family: $f-mono !important;
+						}
+					}
+				}
+			}
+
+			.bw-widget__sessions {
+				width: 100%;
+				order: 4;
+				margin-top: 30px;
+
+				.bw-widget__day {
+					width: 100%;
+
+					.bw-widget__date {
+						border: 1px solid $c-black;
+						padding: 12px 30px;
+						font-family: $f-bold !important;
+						text-transform: uppercase;
+						border-radius: 10px;
+						margin-bottom: 10px;
+						@include under($b-xs) {
+							padding: 10px 20px;
+						}
+					}
+
+					.bw-session {
+						border: 1px solid $c-black;
+						padding: 30px;
+						border-radius: 10px;
+						margin-bottom: 10px;
+						@include under($b-xs) {
+							padding: 20px;
+						}
+
+						.bw-session__basics {
+							align-items: flex-start;
+							@include under($b-xs-xxs) {
+								flex-direction: column;
+							}
+
+							.bw-session__info {
+								display: flex;
+								flex-direction: column;
+								@include under($b-xs-xxs) {
+									width: 100%;
+								}
+
+								.bw-session__group1 {
+									order: 1;
+
+									.bw-session__name {
+										font-size: 35px;
+										line-height: 1;
+										font-family: $f-semi !important;
+										@include under($b-xs) {
+											font-size: 24px;
+										}
+									}
+								}
+
+								.bw-session__time {
+									order: 2;
+									line-height: 1;
+									margin-bottom: 40px;
+									@include under($b-xs-xxs) {
+										margin-bottom: 10px;
+									}
+								}
+
+								.bw-session__group2 {
+									order: 3;
+									width: 100%; max-width: 650px;
+									display: flex;
+									flex-wrap: wrap;
+									justify-content: space-between;
+									@include under($b-xs-xxs) {
+										margin-bottom: 15px;
+										flex-direction: column;
+									}
+
+									& > * {
+										@include under($b-xs-xxs) {
+											line-height: 1.5;
+										}
+									}
+
+									.bw-session__staff,
+									.bw-session__location,
+									.bw-session__availability span {
+										color: $c-black;
+										display: block !important;
+										font-family: $f-mono !important;
+										text-transform: uppercase;
+										letter-spacing: 0.05em;
+										@include under($b-xs-xxs) {
+											font-size: 14px !important;
+										}
+									}
+									.bw-session__location {
+										@include under($b-sm) {
+											display: none !important;
+										}
+									}
+
+									.bw-session__detail-link {
+										margin: 0;
+
+										.bw-session__detail-link-text--open,
+										.bw-session__detail-link-text--closed {
+											color: $c-aqua;
+											font-family: $f-mono !important;
+											text-transform: uppercase;
+											letter-spacing: 0.05em;
+										}
+									}
+								}
+							}
+
+							.bw-widget__signup-now {
+								color: $c-black !important;
+								border: 2px solid $c-black !important;
+								padding: 12px 30px;
+								border-radius: 25px !important;
+								font-family: $f-bold !important;
+								background-color: $c-aqua;
+								@include transition;
+
+								&:hover {
+									color: $c-black !important;
+									border: 2px solid $c-black !important;
+									font-family: $f-bold !important;
+									background-color: $c-white;
+								}
+							}
+						}
+
+						.bw-session__details {
+							width: 100%; max-width: 650px;
+							opacity: 0.6;
+
+							.bw-session__bio *,
+							.bw-session__instructor *,
+							.bw-session__description,
+							.bw-session__description * {
+								width: 100%;
+								font-family: $f-book !important;
+							}
+						}
+
+						.hc_time {
+							font-size: 0;
+							font-family: $f-bold !important;
+
+							* {
+								font-family: $f-bold !important;
+								letter-spacing: -0.02em;
+							}
+
+							.hc_starttime {
+								font-size: 46px;
+								text-transform: lowercase;
+								@include under($b-xs) {
+									font-size: 36px;
+								}
+							}
+
+							.hc_endtime {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

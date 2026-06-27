@@ -1,0 +1,69 @@
+.txt_img {
+	width: 100%;
+
+	&.beige { background-color: $c-off; }
+	&.mint { background-color: $c-light; }
+
+	&--anchor {
+		top: -100px;
+		position: relative;
+		@include under($b-lg) {
+			top: -80px;
+		}
+		@include under($b-sm) {
+			top: -70px;
+		}
+
+	}
+
+	&--wrap {
+		max-width: 976px;
+		min-height: calc(100vh - 100px - 80px);
+		padding-top: 30px;
+		padding-bottom: 30px;
+		@include middle;
+		@include under($b-sm) {
+			max-width: 720px;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		&.right {
+			flex-direction: row-reverse;
+		}
+
+		&--txt {
+			width: 100%; max-width: 450px;
+			margin: auto 0;
+			@extend %txt;
+			@include under($b-sm) {
+				max-width: 320px;
+			}
+			@include under($b-xs) {
+				max-width: 360px;
+				margin: 15px auto;
+			}
+		}
+
+		&--img {
+			width: 100%; max-width: 340px;
+			height: auto;
+			margin: auto 0;
+			border: 1px solid $c-black;
+			border-radius: 10px;
+			@include under($b-sm) {
+				max-width: 280px;
+			}
+			@include under($b-xs) {
+				max-width: 70%;
+				margin: 15px auto;
+			}
+		}
+	}
+}

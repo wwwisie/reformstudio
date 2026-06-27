@@ -1,0 +1,85 @@
+.accordion {
+	width: 100%;
+
+	&.beige { background-color: $c-off; }
+	&.beige &__item { background-color: $c-white; }
+	&.beige &__item--txt a { background-color: $c-off; }
+
+	&.mint { background-color: $c-light; }
+	&.mint &__item { background-color: $c-white; }
+	&.mint &__item--txt a { background-color: $c-light; }
+
+	&--wrap {
+		max-width: 976px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		@include under($b-sm) {
+			max-width: 750px;
+		}
+		@include under($b-xs) {
+			max-width: 420px;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+
+		&--ttl {
+			width: 100%;
+			font-size: 46px;
+			line-height: 1;
+			font-family: $f-semi;
+			margin-bottom: 60px;
+			@include under($b-sm) {
+				font-size: 32px;
+				margin-bottom: 50px;
+			}
+			@include under($b-xs) {
+				font-size: 27px;
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	&__item {
+		width: 100%;
+		border: 1px solid $c-black;
+		padding: 30px;
+		border-radius: 10px;
+		background-color: $c-off;
+		@include under($b-xs) {
+			padding: 20px 17px;
+		}
+
+		&:not(:last-child) { margin-bottom: 20px; }
+
+		&--ttl {
+			font-size: 22px;
+			line-height: 1.2;
+			font-family: $f-bold;
+			margin-bottom: 15px;
+		}
+
+		&--sub {
+			font-size: 15px;
+			font-family: $f-mono;
+			margin-bottom: 30px;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+
+		&--txt {
+			width: 100%; max-width: 620px;
+			font-size: 18.5px;
+
+			a {
+				@extend %btn;
+				// display: inline-block;
+				margin-top: 20px;
+				background-color: $c-white;
+			}
+		}
+	}
+}

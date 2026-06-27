@@ -1,0 +1,83 @@
+@charset "UTF-8";
+.basic [aria-label="Cita (⌃⌥Q)"],
+.basic [aria-label="Cursiva (⌘I)"],
+.basic [aria-label="Tachado (⌃⌥D)"],
+.basic [aria-label="Alineación derecha (⌃⌥R)"],
+.basic [aria-label="Alineación izquierda (⌃⌥L)"],
+.basic [aria-label="Alineación centrada (⌃⌥C)"],
+.basic [aria-label="Pantalla completa"],
+.basic [aria-label="Rehacer (⌘Y)"],
+.basic [aria-label="Deshacer (⌘Z)"],
+.basic [aria-label='Insertar la etiqueta "Leer más" (⌃⌥T)'],
+.basic [aria-label="Más herramientas (⌃⌥Z)"] {
+  display: none; }
+
+.xs iframe {
+  height: 100px !important;
+  min-height: 0 !important; }
+
+.sm iframe {
+  height: 150px !important;
+  min-height: 0 !important; }
+
+.md iframe {
+  height: 200px !important;
+  min-height: 0 !important; }
+
+.colored .acf-switch {
+  background: #dc5d4a;
+  white-space: nowrap;
+  border-color: rgba(0, 0, 0, 0.1) !important; }
+  .colored .acf-switch .-on {
+    background: #309cf3; }
+  .colored .acf-switch .acf-switch-on,
+  .colored .acf-switch .acf-switch-off {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0; }
+  .colored .acf-switch-slider {
+    border-color: rgba(0, 0, 0, 0.2) !important; }
+  .colored .acf-switch span {
+    float: none !important; }
+
+.hide {
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+  .hide * {
+    display: none !important;
+    border: none !important; }
+
+.prepend.date .acf-date-picker:before {
+  content: 'Fecha'; }
+
+.prepend .acf-date-picker {
+  position: relative; }
+  .prepend .acf-date-picker:before {
+    top: 0;
+    left: 0;
+    height: 20px;
+    border: 1px solid #7e8993;
+    display: inline-block;
+    padding: 4px 8px;
+    position: absolute;
+    font-size: 14px;
+    background: #f5f5f5;
+    line-height: 1.4;
+    border-radius: 3px 0 0 3px; }
+  .prepend .acf-date-picker input[type="text"] {
+    padding-left: 65px; }
+
+.acf-field-gallery:not(.xl) .acf-gallery {
+  height: 210px !important; }
+
+.acf-fields > .acf-field {
+  overflow: hidden !important;
+  min-height: 0 !important; }
+
+.acf-field .acf-label label {
+  white-space: nowrap; }
+
+div.acf-taxonomy-field.categorychecklist-holder {
+  border-radius: 0.5em;
+  background-color: #fff; }
+/*# sourceMappingURL=admin.css.map */

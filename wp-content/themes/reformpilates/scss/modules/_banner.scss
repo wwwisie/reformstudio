@@ -1,0 +1,26 @@
+.banner {
+	width: 100%;
+
+	&--wrap {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	&__content {
+		width: 100%;
+		height: calc(100vh - 100px - 80px);
+		border: 1px solid $c-black;
+		border-radius: 10px;
+		@include bg-cover;
+		@include middle;
+
+		&--txt {
+			text-align: center;
+
+			a {
+				@extend %btn;
+				background-color: $c-white
+			}
+		}
+	}
+}
