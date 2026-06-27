@@ -1,0 +1,196 @@
+[03-Apr-2024 04:43:12 UTC] PHP Warning:  Illegal string offset 'acf_fc_layout' in /home/unrestmx/public_html/reform/wp-content/themes/reformpilates/inc/content.php on line 4
+[03-Apr-2024 04:43:12 UTC] PHP Warning:  Illegal string offset 'acf_fc_layout' in /home/unrestmx/public_html/reform/wp-content/themes/reformpilates/inc/content.php on line 12
+[03-Apr-2024 04:43:12 UTC] PHP Warning:  Illegal string offset 'acf_fc_layout' in /home/unrestmx/public_html/reform/wp-content/themes/reformpilates/inc/content.php on line 22
+[03-Apr-2024 04:43:12 UTC] PHP Warning:  Illegal string offset 'acf_fc_layout' in /home/unrestmx/public_html/reform/wp-content/themes/reformpilates/inc/content.php on line 37
+[03-Apr-2024 04:43:12 UTC] PHP Warning:  Illegal string offset 'acf_fc_layout' in /home/unrestmx/public_html/reform/wp-content/themes/reformpilates/inc/content.php on line 57
+[03-Apr-2024 04:44:32 UTC] PHP Warning:  Cannot modify header information - headers already sent in /home/unrestmx/public_html/reform/wp-includes/load.php on line 386
+[03-May-2024 05:48:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pll_register_string() in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php:4
+Stack trace:
+#0 /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/functions.php(106): include()
+#1 /home/d958ymfaichz/public_html/wp-settings.php(663): include('/home/d958ymfai...')
+#2 /home/d958ymfaichz/public_html/wp-config.php(96): require_once('/home/d958ymfai...')
+#3 /home/d958ymfaichz/public_html/wp-load.php(50): require_once('/home/d958ymfai...')
+#4 /home/d958ymfaichz/public_html/wp-activate.php(12): require('/home/d958ymfai...')
+#5 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php on line 4
+[21-May-2024 16:25:32 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 16:26:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 16:27:19 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 16:27:42 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 16:33:29 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 16:40:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 16:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 16:54:15 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 16:54:55 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 16:55:29 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:04:05 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:07:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:07:26 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:17:40 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:23:04 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:23:04 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:24:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:24:20 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:24:20 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:34:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:35:09 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:38:23 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 17:38:29 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:08:11 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:13:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:14:37 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:26:54 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:27:02 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:32:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:34:00 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:45:55 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:52:35 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:53:55 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:55:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 18:56:19 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:00:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:00:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:03:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:11:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:11:56 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:14:50 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:15:08 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:19:52 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:21:26 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:33:17 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:42:39 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:47:38 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 19:59:05 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 20:01:59 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 20:05:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 20:22:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 20:22:39 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 20:28:12 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 20:41:01 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 20:50:46 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 20:52:36 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 21:04:49 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 21:07:58 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 21:08:23 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 21:13:09 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 21:21:47 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 21:32:38 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 21:45:07 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 21:53:11 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 22:13:51 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 22:13:51 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 22:13:51 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 22:13:51 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 22:14:17 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 22:14:35 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[21-May-2024 22:17:16 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/content.php on line 46
+[26-May-2024 20:29:14 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[06-Jun-2024 12:00:14 UTC] PHP Warning:  Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /home/d958ymfaichz/public_html/wp-admin/includes/translation-install.php on line 68
+[10-Jun-2024 16:23:59 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[10-Aug-2024 19:47:25 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[31-Aug-2024 07:27:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pll_register_string() in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php:4
+Stack trace:
+#0 /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/functions.php(106): include()
+#1 /home/d958ymfaichz/public_html/wp-settings.php(668): include('/home/d958ymfai...')
+#2 /home/d958ymfaichz/public_html/wp-config.php(96): require_once('/home/d958ymfai...')
+#3 /home/d958ymfaichz/public_html/wp-load.php(50): require_once('/home/d958ymfai...')
+#4 /home/d958ymfaichz/public_html/wp-activate.php(12): require('/home/d958ymfai...')
+#5 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php on line 4
+[03-Sep-2024 07:54:57 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[19-Sep-2024 13:45:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pll_register_string() in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php:4
+Stack trace:
+#0 /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/functions.php(106): include()
+#1 /home/d958ymfaichz/public_html/wp-settings.php(668): include('/home/d958ymfai...')
+#2 /home/d958ymfaichz/public_html/wp-config.php(96): require_once('/home/d958ymfai...')
+#3 /home/d958ymfaichz/public_html/wp-load.php(50): require_once('/home/d958ymfai...')
+#4 /home/d958ymfaichz/public_html/wp-activate.php(12): require('/home/d958ymfai...')
+#5 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php on line 4
+[21-Sep-2024 16:37:43 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[25-Sep-2024 09:48:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pll_register_string() in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php:4
+Stack trace:
+#0 /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/functions.php(106): include()
+#1 /home/d958ymfaichz/public_html/wp-settings.php(668): include('/home/d958ymfai...')
+#2 /home/d958ymfaichz/public_html/wp-config.php(96): require_once('/home/d958ymfai...')
+#3 /home/d958ymfaichz/public_html/wp-load.php(50): require_once('/home/d958ymfai...')
+#4 /home/d958ymfaichz/public_html/wp-activate.php(12): require('/home/d958ymfai...')
+#5 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php on line 4
+[26-Sep-2024 14:41:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pll_register_string() in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php:4
+Stack trace:
+#0 /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/functions.php(106): include()
+#1 /home/d958ymfaichz/public_html/wp-settings.php(668): include('/home/d958ymfai...')
+#2 /home/d958ymfaichz/public_html/wp-config.php(96): require_once('/home/d958ymfai...')
+#3 /home/d958ymfaichz/public_html/wp-load.php(50): require_once('/home/d958ymfai...')
+#4 /home/d958ymfaichz/public_html/wp-activate.php(12): require('/home/d958ymfai...')
+#5 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php on line 4
+[12-Oct-2024 16:55:58 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[20-Dec-2024 21:09:08 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[15-Jan-2025 15:14:17 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[31-Jan-2025 17:20:01 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[03-Feb-2025 22:34:49 UTC] Error de evento de reprogramación de cron para el hook: recovery_mode_clean_expired_keys. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"daily","args":[],"interval":86400}
+[20-Feb-2025 00:20:58 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[22-Feb-2025 08:36:55 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[27-Mar-2025 23:53:58 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[12-Apr-2025 00:46:19 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[12-May-2025 05:42:13 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[01-Jun-2025 06:31:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pll_register_string() in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php:4
+Stack trace:
+#0 /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/functions.php(106): include()
+#1 /home/d958ymfaichz/public_html/wp-settings.php(695): include('/home/d958ymfai...')
+#2 /home/d958ymfaichz/public_html/wp-config.php(96): require_once('/home/d958ymfai...')
+#3 /home/d958ymfaichz/public_html/wp-load.php(50): require_once('/home/d958ymfai...')
+#4 /home/d958ymfaichz/public_html/wp-activate.php(12): require('/home/d958ymfai...')
+#5 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php on line 4
+[26-Jul-2025 05:07:07 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[03-Aug-2025 10:23:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pll_register_string() in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php:4
+Stack trace:
+#0 /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/functions.php(106): include()
+#1 /home/d958ymfaichz/public_html/wp-settings.php(695): include('/home/d958ymfai...')
+#2 /home/d958ymfaichz/public_html/wp-config.php(96): require_once('/home/d958ymfai...')
+#3 /home/d958ymfaichz/public_html/wp-load.php(50): require_once('/home/d958ymfai...')
+#4 /home/d958ymfaichz/public_html/wp-activate.php(12): require('/home/d958ymfai...')
+#5 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php on line 4
+[03-Aug-2025 23:54:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pll_register_string() in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php:4
+Stack trace:
+#0 /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/functions.php(106): include()
+#1 /home/d958ymfaichz/public_html/wp-settings.php(695): include('/home/d958ymfai...')
+#2 /home/d958ymfaichz/public_html/wp-config.php(96): require_once('/home/d958ymfai...')
+#3 /home/d958ymfaichz/public_html/wp-load.php(50): require_once('/home/d958ymfai...')
+#4 /home/d958ymfaichz/public_html/wp-activate.php(12): require('/home/d958ymfai...')
+#5 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php on line 4
+[10-Sep-2025 13:39:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pll_register_string() in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php:4
+Stack trace:
+#0 /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/functions.php(106): include()
+#1 /home/d958ymfaichz/public_html/wp-settings.php(695): include('/home/d958ymfai...')
+#2 /home/d958ymfaichz/public_html/wp-config.php(96): require_once('/home/d958ymfai...')
+#3 /home/d958ymfaichz/public_html/wp-load.php(50): require_once('/home/d958ymfai...')
+#4 /home/d958ymfaichz/public_html/wp-activate.php(12): require('/home/d958ymfai...')
+#5 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-content/themes/reformpilates/inc/admin/lang.php on line 4
+[18-Sep-2025 19:15:31 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[19-Nov-2025 23:34:59 UTC] Error de evento de reprogramación de cron para el hook: recovery_mode_clean_expired_keys. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"daily","args":[],"interval":86400}
+[25-Nov-2025 02:14:06 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[18-Dec-2025 14:17:44 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}
+[13-Apr-2026 21:16:03 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/d958ymfaichz/public_html/wp-settings.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-settings.php on line 34
+[13-Apr-2026 21:17:17 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/d958ymfaichz/public_html/wp-settings.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-settings.php on line 34
+[14-Apr-2026 02:03:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/d958ymfaichz/public_html/wp-settings.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-settings.php on line 34
+[14-Apr-2026 21:55:17 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home/d958ymfaichz/public_html/wp-settings.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-settings.php on line 34
+[01-Jun-2026 00:36:56 UTC] Error de evento de reprogramación de cron para el hook: wp_privacy_delete_old_export_files. Código de error: could_not_set. Mensaje de error: No se ha podido guardar la lista de eventos del cron.. Datos: {"schedule":"hourly","args":[],"interval":3600}

@@ -1,0 +1,20 @@
+[14-Apr-2025 12:41:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home/d958ymfaichz/public_html/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-admin/includes/admin.php on line 16
+[13-Dec-2025 23:53:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home/d958ymfaichz/public_html/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-admin/includes/admin.php on line 16
+[31-Dec-2025 06:33:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home/d958ymfaichz/public_html/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-admin/includes/admin.php on line 16
+[04-Mar-2026 01:21:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home/d958ymfaichz/public_html/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-admin/includes/admin.php on line 16
+[17-Jun-2026 20:09:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home/d958ymfaichz/public_html/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/d958ymfaichz/public_html/wp-admin/includes/admin.php on line 16
