@@ -64,37 +64,75 @@
 
 
 			<?php elseif ($c['acf_fc_layout'] == 'map'): ?>
-				<section class="map">
-					<div class="map--wrap wrap">
-						<div class="map__content">
-							<div class="map__content--container">
-								<div id="map_JS" class="map__content--item"></div>
-								<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzKb8-Y2cdQUKajFsLPvsO_SP6A_qt1Bs&callback=initMap" type="text/javascript"></script>
-								<script type="text/javascript">
-									google.maps.event.addDomListener(window,'load',init);
-									function initMap() {
-										var mapOptions = {
-											zoom: 16,
-											center: new google.maps.LatLng(<?= $c['map']['lat'] ?>,<?= $c['map']['lng'] ?>),
-											zoomControl: false,
-											scaleControl: false,
-											mapTypeControl: false,
-											streetViewControl: false,
-											// styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":-17}]}]
-										};
-										var mapElement = document.getElementById('map_JS');
-										var map = new google.maps.Map(mapElement, mapOptions);
-										var marker = new google.maps.Marker({ //jshint ignore:line
-											map: map,
-											position: new google.maps.LatLng(<?= $c['map']['lat'] ?>,<?= $c['map']['lng'] ?>), //jshint ignore:line
-										})
-									}
-								</script>
-
-							</div>
-							<div class="map__content--txt"><?= $c['txt'] ?></div>
+				<section class="map slider">
+					<div class="map--wrap wrap slider__content">
+						<?php $is_slider = !empty($c['maps']) && count($c['maps']) > 2; ?>
+						<div class="<?= $is_slider ? 'slider__content--slider map_slider_JS' : 'map__grid' ?>">
+							<?php if (!empty($c['maps'])): ?>
+								<?php foreach ($c['maps'] as $index => $m): ?>
+									<div class="slider__item">
+										<div class="slider__item--img">
+											<div class="map_JS_instance map__content--item" data-lat="<?= $m['map']['lat'] ?>" data-lng="<?= $m['map']['lng'] ?>" style="border: none; border-radius: 0;"></div>
+										</div>
+										<div class="slider__item--meta">
+											<div class="slider__item--txt"><?= $m['txt'] ?></div>
+										</div>
+									</div>
+								<?php endforeach; ?>
+							<?php endif; ?>
 						</div>
 					</div>
+					<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzKb8-Y2cdQUKajFsLPvsO_SP6A_qt1Bs&callback=initMaps" type="text/javascript"></script>
+					<script type="text/javascript">
+						// Initialize slick slider specifically for maps
+						document.addEventListener("DOMContentLoaded", function() {
+							if (typeof jQuery !== 'undefined') {
+								jQuery('.map_slider_JS').slick({
+									dots: false,
+									fade: false,
+									speed: 600,
+									arrows: true,
+									autoplay: false,
+									infinite: false,
+									centerMode: false,
+									pauseOnHover: true,
+									variableWidth: true,
+									slidesToShow: 2,
+									autoplaySpeed: 3000,
+								});
+							}
+						});
+
+						function initMaps() {
+							var mapElements = document.querySelectorAll('.map_JS_instance');
+							for (var i = 0; i < mapElements.length; i++) {
+								var el = mapElements[i];
+								var lat = parseFloat(el.getAttribute('data-lat'));
+								var lng = parseFloat(el.getAttribute('data-lng'));
+								
+								if (!isNaN(lat) && !isNaN(lng)) {
+									var mapOptions = {
+										zoom: 16,
+										center: new google.maps.LatLng(lat, lng),
+										zoomControl: false,
+										scaleControl: false,
+										mapTypeControl: false,
+										streetViewControl: false,
+										gestureHandling: el.closest('.map_slider_JS') ? 'none' : 'auto'
+									};
+									var map = new google.maps.Map(el, mapOptions);
+									var marker = new google.maps.Marker({
+										map: map,
+										position: new google.maps.LatLng(lat, lng),
+									});
+								}
+							}
+						}
+						// If google is already loaded, init maps directly (e.g. timeout or dynamic)
+						if (typeof google === 'object' && typeof google.maps === 'object') {
+							initMaps();
+						}
+					</script>
 				</section>
 			<?php else: ?>
 				<?php echo '<pre>',print_r($c),'</pre>' ?>

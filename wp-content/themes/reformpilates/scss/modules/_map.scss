@@ -2,31 +2,36 @@
 	width: 100%;
 
 	&--wrap {
-		max-width: 976px;
-		padding-top: 40px;
-		padding-bottom: 40px;
-		@include under($b-sm) {
-			max-width: 750px;
-		}
+		// max-width: 976px;
+		padding: 40px;
+
+		// @include under($b-sm) {
+		// 	max-width: 750px;
+		// }
 	}
 
 	&__content {
-		width: 100%;
-		min-height: calc(100vh - 100px - 80px);
+		// width: 100%;
+		// min-height: calc(100vh - 100px - 80px);
 		display: flex;
+		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: flex-start;
 		justify-content: space-between;
+
 		@include under($b-sm) {
 			min-height: 0;
 		}
 
 		&--container {
-			width: 100%; max-width: 450px;
+			width: 100%;
+			max-width: 450px;
 			margin: auto 0;
+
 			@include under($b-sm) {
 				max-width: 320px;
 			}
+
 			@include under($b-xs) {
 				order: 2;
 				margin: auto auto;
@@ -38,23 +43,40 @@
 			height: 450px;
 			border: 1px solid $c-black;
 			border-radius: 10px;
+
 			@include under($b-sm) {
 				height: 380px;
 			}
 		}
 
 		&--txt {
-			width: 100%; max-width: 340px;
+			width: 100%;
+			max-width: 340px;
 			margin: auto 0;
 			@extend %txt;
+
 			@include under($b-sm) {
 				max-width: 320px;
 			}
+
 			@include under($b-xs) {
 				order: 1;
 				text-align: center;
 				margin: auto auto 30px auto;
 			}
 		}
-	}	
+	}
+}
+
+// Grid for when there are 2 or fewer maps
+.map__grid {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	width: 100%;
+}
+
+.map__grid .slider__item {
+	margin-right: 0; // Remove slick's margin since we use gap
 }
