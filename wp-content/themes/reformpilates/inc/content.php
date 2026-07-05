@@ -70,12 +70,21 @@
 						<div class="<?= $is_slider ? 'slider__content--slider map_slider_JS' : 'map__grid' ?>">
 							<?php if (!empty($c['maps'])): ?>
 								<?php foreach ($c['maps'] as $index => $m): ?>
+									<?php 
+										$lat = (isset($m['map']) && is_array($m['map']) && isset($m['map']['lat'])) ? $m['map']['lat'] : '';
+										$lng = (isset($m['map']) && is_array($m['map']) && isset($m['map']['lng'])) ? $m['map']['lng'] : '';
+									?>
 									<div class="slider__item">
 										<div class="slider__item--img">
-											<div class="map_JS_instance map__content--item" data-lat="<?= $m['map']['lat'] ?>" data-lng="<?= $m['map']['lng'] ?>" style="border: none; border-radius: 0;"></div>
+											<?php if ($lat && $lng): ?>
+											<div class="map_JS_instance map__content--item" data-lat="<?= $lat ?>" data-lng="<?= $lng ?>" style="border: none; border-radius: 0;"></div>
+											<?php endif; ?>
 										</div>
 										<div class="slider__item--meta">
-											<div class="slider__item--txt"><?= $m['txt'] ?></div>
+											<div class="slider__item--txt"><?= isset($m['txt']) ? $m['txt'] : '' ?></div>
+											<div style="margin-top: 20px;">
+												<a class="header__menu--btn slider__item--btn" style="position: relative; display: inline-block; margin: 0;" href="<?php bloginfo('url') ?>/<?php pll_e('book') ?>"><?php pll_e('Reserva') ?> <span><?php pll_e('tu sesión') ?></span></a>
+											</div>
 										</div>
 									</div>
 								<?php endforeach; ?>

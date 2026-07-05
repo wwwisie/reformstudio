@@ -968,13 +968,13 @@ b, strong {
   padding: 40px 0 0 0;
 }
 .rsvp img {
-  width: 100%;
-  margin: 40px 0 20px 0;
+  margin: auto;
+  width: 20px;
   display: block;
 }
 .rsvp--widget {
   width: 100%;
-  max-width: 1130px;
+  max-width: 1430px;
   margin: 0 auto;
 }
 .rsvp--widget .loading {
