@@ -72,6 +72,8 @@
 				.bw-filters__checkboxes {
 					padding: 0;
 					margin-right: 40px;
+					margin-top: 0px !important;
+					margin-bottom: 0px !important;
 
 					@include under($b-md) {
 						width: 100%;
@@ -84,6 +86,8 @@
 
 						.bw-i-check {
 							margin-right: 4px !important;
+							height: 25px !important;
+							width: 25px !important;
 						}
 
 						.bw-checkbox__label {

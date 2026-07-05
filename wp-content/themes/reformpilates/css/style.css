@@ -1029,6 +1029,8 @@ b, strong {
 .rsvp--widget .bw-widget .bw-filters .bw-filters__checkboxes {
   padding: 0;
   margin-right: 40px;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }
 @media (max-width: 1080px) {
   .rsvp--widget .bw-widget .bw-filters .bw-filters__checkboxes {
@@ -1042,6 +1044,8 @@ b, strong {
 }
 .rsvp--widget .bw-widget .bw-filters .bw-filters__checkboxes .bw-checkbox .bw-i-check {
   margin-right: 4px !important;
+  height: 25px !important;
+  width: 25px !important;
 }
 .rsvp--widget .bw-widget .bw-filters .bw-filters__checkboxes .bw-checkbox .bw-checkbox__label {
   font-size: 12.5px !important;
