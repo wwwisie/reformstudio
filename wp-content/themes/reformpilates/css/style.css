@@ -1060,6 +1060,7 @@ b, strong {
   .rsvp--widget .bw-widget .bw-filters .bw-filters-flex-container {
     width: 100%;
     margin-top: 20px;
+    flex-wrap: wrap;
   }
 }
 .rsvp--widget .bw-widget .bw-filters .bw-filters-flex-container .bw-filters__selects {
@@ -1067,12 +1068,20 @@ b, strong {
   border-top: 0;
   margin-top: 0;
 }
+@media (max-width: 1080px) {
+  .rsvp--widget .bw-widget .bw-filters .bw-filters-flex-container .bw-filters__selects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+}
 .rsvp--widget .bw-widget .bw-filters .bw-filters-flex-container .bw-filters__selects .bw-select {
   width: auto;
   height: 30px;
   border: 1px solid #000000;
   cursor: pointer;
-  padding: 0 20px 0 10px;
+  padding: 0 40px 0 10px;
   font-size: 12.5px !important;
   margin-right: 15px;
   border-radius: 20px;

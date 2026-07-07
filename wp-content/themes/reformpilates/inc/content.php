@@ -83,7 +83,8 @@
 										<div class="slider__item--meta">
 											<div class="slider__item--txt"><?= isset($m['txt']) ? $m['txt'] : '' ?></div>
 											<div style="margin-top: 20px;">
-												<a class="header__menu--btn slider__item--btn" style="position: relative; display: inline-block; margin: 0;" href="<?php bloginfo('url') ?>/<?php pll_e('book') ?>"><?php pll_e('Reserva') ?> <span><?php pll_e('tu sesión') ?></span></a>
+												<?php $loc_slug = isset($m['location_slug']) ? $m['location_slug'] : ''; ?>
+												<a class="header__menu--btn slider__item--btn" style="position: relative; display: inline-block; margin: 0;" href="<?php bloginfo('url') ?>/<?php pll_e('book') ?>?location=<?= urlencode($loc_slug) ?>"><?php pll_e('Reserva') ?> <span><?php pll_e('tu sesión') ?></span></a>
 											</div>
 										</div>
 									</div>
