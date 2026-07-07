@@ -1337,4 +1337,14 @@ b, strong {
   display: none;
 }
 
+.hc_waitlist,
+.hc_availability,
+.bw-session__detail-link-text--closed,
+.bw-session__detail-link-text--open {
+  font-family: "DMMono-Medium", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  text-transform: uppercase !important;
+}
+
 /*# sourceMappingURL=style.css.map */

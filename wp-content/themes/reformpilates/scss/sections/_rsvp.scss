@@ -406,3 +406,13 @@
 		}
 	}
 }
+
+.hc_waitlist,
+.hc_availability,
+.bw-session__detail-link-text--closed,
+.bw-session__detail-link-text--open {
+	font-family: $f-mono !important;
+	font-style: normal !important;
+	font-weight: 400 !important;
+	text-transform: uppercase !important;
+}

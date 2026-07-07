@@ -10,3 +10,5 @@
 	
 	pll_register_string('Footer: Suscríbete','Suscríbete');
 	
+	pll_register_string('Reserva: Selecciona tu sede','Selecciona tu sede');
+	pll_register_string('Reserva: Seleccionar','Seleccionar');
