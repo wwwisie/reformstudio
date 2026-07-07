@@ -10,6 +10,7 @@
 					</div>
 				</section>
 			<?php elseif ($c['acf_fc_layout'] == 'txt_img'): ?>
+				<?php if (empty($c['hide_section'])): ?>
 				<div class="txt_img--anchor" id="<?= $c['anchor'] ?>"></div>
 				<section class="txt_img <?= $c['color'] ?>">
 					<div class="txt_img--wrap wrap">
@@ -19,6 +20,7 @@
 						</div>
 					</div>
 				</section>
+				<?php endif; ?>
 			<?php elseif ($c['acf_fc_layout'] == 'accordion'): ?>
 				<section class="accordion <?= $c['color'] ?>">
 					<div class="accordion--wrap wrap">
